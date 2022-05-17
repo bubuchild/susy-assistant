@@ -1,0 +1,56 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bot_support
+  - bot_assistance
+  - bot_lonely
+  - bot_anxious
+  - bot_emergency
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "I understand that you might be in a difficult situation, if you would like some assistance from me then you can write -assistance-, or I can help you with support from someone else by writing -support-."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_support:
+  - text: "If you or someone else is in danger, call 999 or go to A&E now. If you need help urgently for your mental health, but it's not an emergency, get help from NHS 111 online or call 111, or you can visit this link https://www.nhs.uk/nhs-services/mental-health-services/"
+
+  utter_anxious:
+  - text: "If you think that you might be having anxiety, or a panic attack, please visit this link to check your symptoms https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/. Or you can also call 111 to receive an assistance"
+
+  utter_continue:
+  - text: "Is there something else that we can help you with?"
+
+  utter_continuation2:
+  - text: "Tell us more about it..."
+
+  utter_emergency:
+  - text: "I should advise you to go to this link for NHS Emergency & Anxiety, fear and panic support (https://www.nhs.uk/mental-health/feelings- symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/) to get as much support as you can during these hard times." 
+
+  utter_lonely:
+  - text: "Sure, I am always happy to have a good conversation with a good person.Tell me about your day. "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
