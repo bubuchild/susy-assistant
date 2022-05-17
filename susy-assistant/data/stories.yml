@@ -1,0 +1,68 @@
+version: "2.0"
+
+stories:
+
+#anxious path
+- story: anxious path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_anxious
+  - action: utter_anxious
+  - action: utter_continue
+  - intent: affirm
+  - action: utter_continuation2
+
+- story: anxious path2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_anxious
+  - action: utter_anxious
+  - action: utter_continue
+  - intent: deny
+  - action: utter_goodbye
+
+# lonely path
+
+- story: lonely path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_lonely
+  - action: utter_lonely
+  - action: utter_continue
+  - intent: affirm
+  - action: utter_continuation2
+
+- story: lonely path2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_lonely
+  - action: utter_lonely
+  - action: utter_continue
+  - intent: deny
+  - action: utter_goodbye
+
+# emergency path
+
+- story: emergency path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_emergency
+  - action: utter_emergency
+  - action: utter_continue
+  - intent: affirm
+  - action: utter_continuation2
+
+- story: emergency path2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_emergency
+  - action: utter_emergency
+  - action: utter_continue
+  - intent: deny
+  - action: utter_goodbye
