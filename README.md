@@ -1,4 +1,4 @@
-header class="text-center">
+<header class="text-center">
     <a href='https://pngtree.com/so/cute'> png from pngtree.com/</a>
         <h1 class="xl reset-margin large-margin">SuSy System</h1>
         <p>
